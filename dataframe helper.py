@@ -48,8 +48,8 @@ def df_info_func(df, vizualize=False, threshold=3, display_sample=True, sample_c
             msno.matrix(df)
 
         sample_df = pd.concat([df.head(sample_count),df.tail(sample_count)])
-		
-		if side_by_side:
+
+        if side_by_side:
             from IPython.display import display_html
             space = "\xa0" * 10
             info_styler = df_info.style.set_table_attributes("style='display:inline'").set_caption('DF Info')
@@ -58,7 +58,7 @@ def df_info_func(df, vizualize=False, threshold=3, display_sample=True, sample_c
         else:
             from IPython.core.display import HTML
             display(HTML(df_info.to_html()))
-            if display_sample: 				
-				display(HTML(sample_df.to_html()))            
+            if display_sample:
+                display(HTML(sample_df.to_html()))            
     else:
         print("Empty DataFrame")
