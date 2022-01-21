@@ -1,5 +1,7 @@
 Pattern Questions
 
+Inspired by similar implementation in [this source, inplemented in Java](https://github.com/kunal-kushwaha/DSA-Bootcamp-Java)
+
 Print these patterns using loops:
 
 ```
